@@ -1,0 +1,39 @@
+.Recommended{
+    flex-basis: 30%;
+    margin-left:10px;
+}
+
+.side-vid-list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.side-vid-list img{
+    flex-basis: 50%;
+    
+    width: 120px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image doesn't distort */
+    
+    
+}
+.video-info{
+    flex-basis: 49%;
+    margin-left: 9px;
+} 
+.video-info h4{
+    font-size: 13px;
+    font-weight:600;
+    margin-bottom: 5px;
+}
+.video-info p{
+    color: #5a5a5a;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .Recommended{
+        width: 100%;
+    }
+  }
