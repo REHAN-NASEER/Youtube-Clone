@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Sidebar from "../../components/sidebar/Sidebar";
+import Sidebar from "../../components/Sidebar/Sidebar"
 import Feed from "../../components/Feed/Feed";
 import "./Home.css";
 export default function Home({ sidebar }) {
