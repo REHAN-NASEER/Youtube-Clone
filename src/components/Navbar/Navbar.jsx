@@ -8,7 +8,7 @@ import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
 import profile_icon from "../../assets/jack.png";
 import { Link } from "react-router-dom";
-import { API_KEY, value_converter } from "../../data";
+
 import moment from "moment";
 
 export default function Navbar({ setsidebar }) {

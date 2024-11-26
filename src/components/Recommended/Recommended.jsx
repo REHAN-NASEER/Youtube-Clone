@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Recommended.css";
-import { API_KEY } from "../../data";
 function Recommended({ categoryId }) {
   const [apidata, setapidata] = useState([]);
   const [loading, setloading] = useState(true);
-
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const fetch_video = async () => {
     try {
       const Recommended_video_url = `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=50&regionCode=US&videoCategoryId=${categoryId}&key=${API_KEY}`;

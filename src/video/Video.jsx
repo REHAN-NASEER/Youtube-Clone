@@ -4,10 +4,11 @@ import dislike from "../assets/dislike.png";
 import share from "../assets/share.png";
 import save from "../assets/save.png";
 import "./Video.css";
-import { API_KEY, value_converter } from "../data";
+import { value_converter } from "../data";
 import moment from "moment";
 export default function Video({ videoId }) {
   const [apidata, setapidata] = useState(null);
+  const API_KEY = import.meta.env.VITE_API_KEY;
   // fetching video details
   const fetch_detail = async () => {
 
